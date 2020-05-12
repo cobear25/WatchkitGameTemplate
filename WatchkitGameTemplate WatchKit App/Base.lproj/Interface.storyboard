@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15702" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller fullScreen="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="WatchkitGameTemplate_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <spriteKitScene alignment="left" id="7go-MO-VPA">
+                            <gestureRecognizers>
+                                <longPressGestureRecognizer minimumPressDuration="0.0" id="SyM-bh-4dH">
+                                    <connections>
+                                        <action selector="handleGestureWithGestureRecognizer:" destination="AgC-eL-Hgc" id="ZKe-7G-x7Q"/>
+                                    </connections>
+                                </longPressGestureRecognizer>
+                            </gestureRecognizers>
+                        </spriteKitScene>
+                    </items>
+                    <connections>
+                        <outlet property="skScene" destination="7go-MO-VPA" id="dYh-Oh-4qY"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="116" y="31"/>
+        </scene>
+    </scenes>
+</document>
